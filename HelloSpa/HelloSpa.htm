@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8"/>
+  <title>Hello SPA</title>
+  <script type="text/javascript" src="Js/jquery-3.2.1.min.js"></script>
+  <script type="text/javascript" src="Js/knockout-3.4.2.js"></script>
+  <script type="text/javascript" src="Js/HelloSpa_viewmodel.js"></script>
+  <script type="text/javascript" src="Js/solidus.js"></script>
+  <script type="text/javascript">
+	SolidusServerSide();
+  </script>
+</head>
+<body>
+<p>First name: <strong data-bind="text: firstName">TODO</strong></p>
+<p>Last name: <strong data-bind="text: lastName">TODO</strong></p>
+<p id="fullName1">Full name: <strong data-bind="text: fullName">TODO</strong></p>
+
+<p>First name: <input id="txtFirstName" type="text" data-bind="value: firstName" /></p>
+<p>Last name: <input id="txtLastName" type="text" data-bind="value: lastName" /></p>
+<button data-bind="click: capitalizeLastName">Go Caps</button>
+</body>
+</html>
